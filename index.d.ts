@@ -3,7 +3,4 @@ interface BlockComment {
   codeStart?: number;
 }
 
-declare module "extract-comments" {
-  const extractComments: (text: string) => BlockComment[];
-  export default extractComments;
-}
+export default function extractComments(text: string): BlockComment[];
