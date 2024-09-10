@@ -4,4 +4,6 @@ interface BlockComment {
 }
 
 /** @see https://github.com/jonschlinkert/extract-comments */
-export default function extractComments(text: string): BlockComment[];
+declare function extractComments(text: string): BlockComment[];
+
+export = extractComments;
